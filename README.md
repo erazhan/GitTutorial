@@ -1,15 +1,15 @@
-# CommonTools
+# GitTutorial
 
 ### Git全局设置:
-- git config --global user.name "erazhan"
-- git config --global user.email "erazhan@163.com"
+- git config --global user.name "user.name"
+- git config --global user.email "user.email"
 
 
 ### git上传文件介绍
 1. github上创建项目
 2. 在想要操作的文件夹（或者桌面，但是后续要cd到该文件夹）中右键点击git bash here（如果没有则需要先安装Git）
 3. 输入git init，会多一个.git隐藏文件夹
-4. 输入git remote add origin https://github.com/erazhan/CommonTools.git(最后可根据具体仓库地址更改即可)
+4. 输入git remote add origin https://github.com/erazhan/GitTutorial.git (最后可根据具体仓库地址更改即可)
 5. 输入git pull --rebase origin master,如果只是想要上传新的代码文件,则需要将原有的代码文件合并放到文件夹中
 6. 输入git pull origin master，作用是将码云上的仓库pull到本地文件夹
 7. 将需要上传的代码文件，复制粘贴到目标文件夹中
@@ -18,10 +18,13 @@
 10. 输入git push origin master将本地仓库推送到远程仓库即可完成上传
 11. git branch release/0.0.1创建分支
 12. git checkout release/0.0.1切换分支，或者git checkout -b release/0.0.1直接创建分支并切换
+13. git tag v0.0.1, 创建本地tag
+14. git push origin v0.0.1, 推送到远程仓库
 
 - [参考网址](https://www.jianshu.com/p/3e0b213ab03d)
-- [git分支介绍](https://www.jianshu.com/p/9186369d577a)
-- [git分支使用](https://blog.csdn.net/weixin_43404836/article/details/108995478)
+- [git branch介绍](https://www.jianshu.com/p/9186369d577a)
+- [git branch使用](https://blog.csdn.net/weixin_43404836/article/details/108995478)
+- [git tag介绍](https://blog.csdn.net/CSDN_KONGlX/article/details/125484338)
 
 ### github获取personal assess token
 ```angular2html
