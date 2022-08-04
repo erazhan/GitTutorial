@@ -16,7 +16,12 @@
 8. 输入git add .(上传所有文件)或者git add 文件名(上传单独的文件)
 9. 输入git commit -m '文件描述,一般用first commit,init等都可以'
 10. 输入git push origin master将本地仓库推送到远程仓库即可完成上传
+11. git branch release/0.0.1创建分支
+12. git checkout release/0.0.1切换分支，或者git checkout -b release/0.0.1直接创建分支并切换
+
 - [参考网址](https://www.jianshu.com/p/3e0b213ab03d)
+- [git分支介绍](https://www.jianshu.com/p/9186369d577a)
+- [git分支使用](https://blog.csdn.net/weixin_43404836/article/details/108995478)
 
 ### github获取personal assess token
 ```angular2html
