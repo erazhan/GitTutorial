@@ -11,7 +11,7 @@
 3. 输入git init，会多一个.git隐藏文件夹
 4. 输入git remote add origin https://github.com/erazhan/GitTutorial.git (最后可根据具体仓库地址更改即可)
 5. 输入git pull --rebase origin master,如果只是想要上传新的代码文件,则需要将原有的代码文件合并放到文件夹中
-6. 输入git pull origin master，作用是将码云上的仓库pull到本地文件夹
+6. 输入git pull origin master，作用是将github上的仓库pull到本地文件夹
 7. 将需要上传的代码文件，复制粘贴到目标文件夹中
 8. 输入git add .(上传所有文件)或者git add 文件名(上传单独的文件)
 9. 输入git commit -m '文件描述,一般用first commit,init等都可以'
@@ -25,6 +25,10 @@
 - [git branch介绍](https://www.jianshu.com/p/9186369d577a)
 - [git branch使用](https://blog.csdn.net/weixin_43404836/article/details/108995478)
 - [git tag介绍](https://blog.csdn.net/CSDN_KONGlX/article/details/125484338)
+
+### 备注
+- .gitignore最好在上传文件前进行创建，否则不会忽略已经上传过的文件
+- .git文件保存了当前所有信息
 
 ### github获取personal assess token
 ```angular2html
