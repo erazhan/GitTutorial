@@ -7,19 +7,23 @@
 
 ### git上传文件介绍
 1. github上创建项目
-2. 在想要操作的文件夹（或者桌面，但是后续要cd到该文件夹）中右键点击git bash here（如果没有则需要先安装Git）
-3. 输入git init，会多一个.git隐藏文件夹
-4. 输入git remote add origin https://github.com/erazhan/GitTutorial.git (最后可根据具体仓库地址更改即可)
-5. 输入git pull --rebase origin master,如果只是想要上传新的代码文件,则需要将原有的代码文件合并放到文件夹中
-6. 输入git pull origin master，作用是将github上的仓库pull到本地文件夹
-7. 将需要上传的代码文件，复制粘贴到目标文件夹中
-8. 输入git add .(上传所有文件)或者git add 文件名(上传单独的文件)
-9. 输入git commit -m '文件描述,一般用first commit,init等都可以'
-10. 输入git push origin master将本地仓库推送到远程仓库即可完成上传
-11. git branch release/0.0.1创建分支
-12. git checkout release/0.0.1切换分支，或者git checkout -b release/0.0.1直接创建分支并切换
-13. git tag v0.0.1, 创建本地tag
-14. git push origin v0.0.1, 推送到远程仓库
+2. ```cd <your dir>```（其它地方也行，但是后续要切到该文件夹）中右键点击```git bash here```（如果没有则需要先安装Git）
+3. ```git init```，会多一个```.git```隐藏文件夹
+4. ```git remote add origin https://github.com/erazhan/GitTutorial.git``` (最后可根据具体仓库地址更改即可)
+5. ```git pull [--rebase] origin <your branch or tag>```，作用是将github上的仓库pull到本地文件夹，注意[--rebase]不要轻易使用，适用于代码非首次提交
+6. 将需要上传的代码文件，复制到目标文件夹
+7. ```git add .```(上传所有文件)或者```git add <your update file>```(上传单独的文件)
+8. ```git commit -m '文件描述,一般用first commit,init等都可以'```
+9. ```git push origin <your branch or tag>```将本地仓库推送到远程仓库
+
+
+#### branch和tag的使用
+- 创建分支，```git branch release/0.0.8```
+- 切换分支，```git checkout release/0.0.8```，或者```git checkout -b release/0.0.8```直接创建分支并切换
+- 创建本地tag，```git tag v0.0.8```
+- 删除本地tag，```git tag -d v0.0.8```
+- 将本地tag上传到远程仓库，```git push origin v0.0.8```，其实和上传分支一个道理，但不支持更改，更改相当于先删了原有的tag，再重新上传
+- 删除远程tag，```git push --delete origin v0.0.8```，注意如果执行不了，可以尝试先git pull origin v0.0.8
 
 - [参考网址](https://www.jianshu.com/p/3e0b213ab03d)
 - [git branch介绍](https://www.jianshu.com/p/9186369d577a)
