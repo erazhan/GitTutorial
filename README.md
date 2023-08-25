@@ -23,7 +23,7 @@
 - 创建本地tag，```git tag v0.0.8```
 - 删除本地tag，```git tag -d v0.0.8```
 - 将本地tag上传到远程仓库，```git push origin v0.0.8```，其实和上传分支一个道理，但不支持更改，更改相当于先删了原有的tag，再重新上传
-- 删除远程tag，```git push --delete origin v0.0.8```，注意如果执行不了，可以尝试先git pull origin v0.0.8
+- 删除远程tag，```git push --delete origin v0.0.8```，注意如果执行不了，可以尝试先```git pull origin v0.0.8```
 
 - [参考网址](https://www.jianshu.com/p/3e0b213ab03d)
 - [git branch介绍](https://www.jianshu.com/p/9186369d577a)
