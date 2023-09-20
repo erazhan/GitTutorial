@@ -34,6 +34,10 @@
 - .gitignore最好在上传文件前进行创建，否则不会忽略已经上传过的文件
 - .git文件保存了当前所有信息
 
+### 查看github账户信息
+- https://api.github.com/users/erazhan
+- [参考网址](https://msutar.com/2020/when-i-joined-github/)
+
 ### github获取personal assess token
 ```angular2html
 remote: Support for password authentication was removed on August 13, 2021.
